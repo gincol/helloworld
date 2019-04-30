@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.helloworld.utils.Utils;
+
 @RestController
 @RequestMapping("/hello")
 public class HelloWorldController {
@@ -17,7 +19,7 @@ public class HelloWorldController {
 	@GetMapping(path = "/world")
 	public @ResponseBody String getAllUsers() {
 		log.info("Busqueda de todos los usuarios");
-		return "Hello World";
+		return "Hello World desde " + Utils.getIp();
 	}
 	
 }
