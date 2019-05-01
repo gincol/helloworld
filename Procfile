@@ -1,1 +1,1 @@
-web: gincol-helloworld-master
+web: java -jar target/helloworld.jar
