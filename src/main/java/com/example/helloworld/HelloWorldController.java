@@ -18,7 +18,7 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/world")
 	public @ResponseBody String getAllUsers() {
-		log.info("Busqueda de todos los usuarios");
+		log.info("Hello World desde " + Utils.getIp());
 		return "Hello World desde " + Utils.getIp();
 	}
 	
